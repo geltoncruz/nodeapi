@@ -1,0 +1,21 @@
+{
+  "name": "nodeapi",
+  "version": "1.0.0",
+  "description": "Gestao de tarefas",
+  "main": "index.js",
+  "scripts": {
+    "test": "\"echo \"Error: no test especified\" && exit 1\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "nodeapi"
+  },
+  "keywords": [
+    "Api",
+    "javascript",
+    "rest",
+    "restfull"
+  ],
+  "author": "Gelton Cruz",
+  "license": "ISC"
+}
