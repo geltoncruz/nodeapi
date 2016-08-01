@@ -6,16 +6,6 @@
   "scripts": {
     "test": "\"echo \"Error: no test especified\" && exit 1\""
   },
-  "repository": {
-    "type": "git",
-    "url": "nodeapi"
-  },
-  "keywords": [
-    "Api",
-    "javascript",
-    "rest",
-    "restfull"
-  ],
   "author": "Gelton Cruz",
   "license": "ISC"
 }
