@@ -2,10 +2,10 @@
 
 ## Instalação
 ```bash
-  $ git clone https://github.com/thiagoleitedev/node-express-boilerplate
-  $ cd node-express-boilerplate
+  $ git clone https://github.com/geltoncruz/nodeapi
+  $ cd nodeapi
   $ npm install
-  $ npm start
+  $ nodemon start
 ```
  ## Aplicação
 
