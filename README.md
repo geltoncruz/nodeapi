@@ -1,3 +1,4 @@
+<<<<<<< HEAD
  # Bear Node Api
 
  ## Aplicação
@@ -83,5 +84,13 @@ app.use('/api', router);
 // =============================================================================
 app.listen(port);
 console.log('Magic happens on port ' + port);
+=======
+# nodeapi
+> Preparando material de aula de nodeJs utilizando bibliotecas babel e express
+
+```js
+
+var express;
+>>>>>>> 04ce63e2257fa8607c14244d8825b4483336eac5
 
 ```
