@@ -1,4 +1,3 @@
-<<<<<<< HEAD
  # Bear Node Api
 
  ## Aplicação
@@ -91,6 +90,6 @@ console.log('Magic happens on port ' + port);
 ```js
 
 var express;
->>>>>>> 04ce63e2257fa8607c14244d8825b4483336eac5
+
 
 ```
