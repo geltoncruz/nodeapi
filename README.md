@@ -1,5 +1,12 @@
  # Bear Node Api
 
+## Instalação
+```bash
+  $ git clone https://github.com/thiagoleitedev/node-express-boilerplate
+  $ cd node-express-boilerplate
+  $ npm install
+  $ npm start
+```
  ## Aplicação
 
  trabalharemos na construção de uma api que terá:
@@ -83,7 +90,7 @@ app.use('/api', router);
 // =============================================================================
 app.listen(port);
 console.log('Magic happens on port ' + port);
-=======
+///=======
 # nodeapi
 > Preparando material de aula de nodeJs utilizando bibliotecas babel e express
 
