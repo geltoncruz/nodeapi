@@ -8,12 +8,16 @@
 // call the packages we need
 var express    = require('express');        // call express
 var app        = express();                 // define our app using express
+// Teste
+var admin = express();
+
 var bodyParser = require('body-parser');
 
 var mongoose   = require('mongoose');
 mongoose.connect('mongodb://localhost/nodeapi');
 
 var Bear       = require('./models/bear');
+var aluno       = require('./routers/aluno');
 
 // configure app to use bodyParser()
 // this will let us get the data from a POST
@@ -57,8 +61,6 @@ router.route('/bears')
         });
 
     })
-
-
 
 .get(function(req,res){
     Bear.find(function(err,bears){
@@ -113,10 +115,37 @@ router.route('/bears/:bear_id')
         });
     });
 
+// Admin Routers
+
+// ssvar admin = express(); // the sub app
+
+admin.get('/', function (req, res) {
+  console.log(admin.mountpath); // /admin
+  // res.send('Admin Homepage');
+  // var content = [{title:  'Admin Homepage', content:  'Lorem Ipsum'}];
+  // res.json(content[title]);
+
+  var content = {
+    title     : 'Titulo',
+    content   : 'Lorem Ipsum',
+    subtitle  : 'Lorem Lorem Lorek'
+  }
+  res.json(content.subtitle);
+});
+
+
+// Aluno Routers
+
+
 
 // REGISTER OUR ROUTES -------------------------------
 // all of our routes will be prefixed with /api
 app.use('/api', router);
+//app.use('/aluno', router);
+app.use('/admin', admin); // mount the sub app
+//pp.use('/aluno', aluno);
+
+
 
 // START THE SERVER
 // =============================================================================
